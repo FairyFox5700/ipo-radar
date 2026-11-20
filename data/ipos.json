@@ -1,0 +1,324 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-11-20T10:27:58Z",
+  "sourcePolicy": "Primary filings and official exchange or issuer notices are preferred. Unknown terms remain null.",
+  "records": [
+    {
+      "id": "lis-technologies-us-2026",
+      "company": "LIS Technologies",
+      "ticker": "LIS",
+      "region": "US",
+      "country": "United States",
+      "exchange": "Nasdaq Capital Market (applied)",
+      "sector": "Nuclear technology",
+      "status": "Amended",
+      "expectedDate": null,
+      "dateConfidence": "unknown",
+      "price": {
+        "low": 5,
+        "high": 7,
+        "currency": "USD"
+      },
+      "shares": 3100000,
+      "dealSize": "$15.5m–$21.7m",
+      "filedAt": "2026-11-18",
+      "summary": "Laser isotope separation technology developer; listing approval and timing remain pending.",
+      "scores": {
+        "quality": 43,
+        "risk": 72,
+        "research": 36,
+        "completeness": 78,
+        "provisional": true
+      },
+      "drivers": [
+        {
+          "label": "Deal terms",
+          "tone": "positive",
+          "text": "Price range and share count are disclosed in the amended filing."
+        },
+        {
+          "label": "Listing execution",
+          "tone": "risk",
+          "text": "Nasdaq application is pending and no trading date is stated."
+        },
+        {
+          "label": "Liquidity",
+          "tone": "risk",
+          "text": "The proposed deal is small, which can increase aftermarket volatility."
+        }
+      ],
+      "sources": [
+        {
+          "title": "SEC S-1/A — 18 Nov 2026",
+          "publisher": "U.S. SEC",
+          "url": "https://www.sec.gov/Archives/edgar/data/1973276/000149315226052907/forms-1a.htm",
+          "type": "filing"
+        }
+      ],
+      "lastVerified": "2026-11-20T10:26:23Z"
+    },
+    {
+      "id": "nscale-uk-2026",
+      "company": "Nscale",
+      "ticker": "NSCL",
+      "region": "Europe",
+      "country": "United Kingdom",
+      "exchange": "NYSE (intended)",
+      "sector": "AI infrastructure",
+      "status": "Amended",
+      "expectedDate": null,
+      "dateConfidence": "unknown",
+      "price": null,
+      "shares": null,
+      "dealSize": null,
+      "filedAt": "2026-11-12",
+      "summary": "UK AI infrastructure provider with fast growth, large losses and no disclosed offer terms.",
+      "scores": {
+        "quality": 54,
+        "risk": 84,
+        "research": 37,
+        "completeness": 71,
+        "provisional": true
+      },
+      "drivers": [
+        {
+          "label": "Growth",
+          "tone": "positive",
+          "text": "The amended filing reports sharply higher preliminary revenue."
+        },
+        {
+          "label": "Profitability",
+          "tone": "risk",
+          "text": "The company reports widening net losses and capital-intensive expansion."
+        },
+        {
+          "label": "Deal terms",
+          "tone": "risk",
+          "text": "Price range, share count and timing are not disclosed."
+        }
+      ],
+      "sources": [
+        {
+          "title": "SEC S-1 filing",
+          "publisher": "U.S. SEC",
+          "url": "https://www.sec.gov/Archives/edgar/data/2110365/000119312526395475/0001193125-26-395475.txt",
+          "type": "filing"
+        },
+        {
+          "title": "Amended IPO filing summary — 12 Nov 2026",
+          "publisher": "Reuters via Euronext",
+          "url": "https://live.euronext.com/en/financial-news/nscale-expects-14-fold-revenue-surge-amended-ipo-filing",
+          "type": "reporting"
+        }
+      ],
+      "lastVerified": "2026-11-20T10:26:23Z"
+    },
+    {
+      "id": "sensing4d-cayman-2026",
+      "company": "Sensing4D AI",
+      "ticker": null,
+      "region": "US",
+      "country": "Cayman Islands / China",
+      "exchange": "Nasdaq Capital Market (applied)",
+      "sector": "AI & 3D vision",
+      "status": "Filed",
+      "expectedDate": null,
+      "dateConfidence": "unknown",
+      "price": null,
+      "shares": null,
+      "dealSize": null,
+      "filedAt": "2026-10-21",
+      "summary": "AI-driven 3D vision company operating in China; offer terms and ticker remain blank.",
+      "scores": {
+        "quality": 38,
+        "risk": 82,
+        "research": null,
+        "completeness": 55,
+        "provisional": true
+      },
+      "drivers": [
+        {
+          "label": "Disclosure",
+          "tone": "positive",
+          "text": "A public F-1 describes the operating structure and proposed offering."
+        },
+        {
+          "label": "Deal readiness",
+          "tone": "risk",
+          "text": "Price, share count, ticker and timetable are not yet disclosed."
+        },
+        {
+          "label": "Structure",
+          "tone": "risk",
+          "text": "The Cayman holding-company and PRC operating structure adds regulatory complexity."
+        }
+      ],
+      "sources": [
+        {
+          "title": "SEC F-1 — 21 Oct 2026",
+          "publisher": "U.S. SEC",
+          "url": "https://www.sec.gov/Archives/edgar/data/2087307/000121390026111161/ea0256781-12.htm",
+          "type": "filing"
+        }
+      ],
+      "lastVerified": "2026-11-20T10:26:23Z"
+    },
+    {
+      "id": "anthropic-us-2026",
+      "company": "Anthropic",
+      "ticker": "ANT",
+      "region": "US",
+      "country": "United States",
+      "exchange": "Nasdaq Global Select",
+      "sector": "Artificial intelligence",
+      "status": "Listed",
+      "expectedDate": "2026-11-19",
+      "dateConfidence": "confirmed",
+      "price": {
+        "final": 83,
+        "currency": "USD"
+      },
+      "shares": 980000000,
+      "dealSize": "$81.34bn",
+      "filedAt": "2026-11-19",
+      "summary": "Frontier AI developer priced above its marketed range and completed a record-size offering.",
+      "scores": {
+        "quality": 64,
+        "risk": 75,
+        "research": 46,
+        "completeness": 93,
+        "provisional": false
+      },
+      "drivers": [
+        {
+          "label": "Demand",
+          "tone": "positive",
+          "text": "The final price exceeded the marketed range and the deal was upsized."
+        },
+        {
+          "label": "Scale",
+          "tone": "positive",
+          "text": "The filing reports rapid revenue growth and substantial strategic participation."
+        },
+        {
+          "label": "Valuation & execution",
+          "tone": "risk",
+          "text": "The valuation, infrastructure commitments and competitive market create elevated execution risk."
+        }
+      ],
+      "sources": [
+        {
+          "title": "SEC final prospectus (424B4)",
+          "publisher": "U.S. SEC",
+          "url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026074944/anthropicpbc-424b4.htm",
+          "type": "final prospectus"
+        }
+      ],
+      "lastVerified": "2026-11-20T10:27:58Z"
+    },
+    {
+      "id": "dip-holding-uae-2026",
+      "company": "DIP Holding",
+      "ticker": "DIP",
+      "region": "Middle East",
+      "country": "United Arab Emirates",
+      "exchange": "Dubai Financial Market",
+      "sector": "Industrial real estate",
+      "status": "Listed",
+      "expectedDate": "2026-11-11",
+      "dateConfidence": "confirmed",
+      "price": {
+        "final": 1.12,
+        "currency": "AED"
+      },
+      "shares": 1735243300,
+      "dealSize": "AED 1.9bn",
+      "filedAt": "2026-11-04",
+      "summary": "Dubai Investments Park operator; secondary offering of 20% of issued shares.",
+      "scores": {
+        "quality": 71,
+        "risk": 52,
+        "research": 61,
+        "completeness": 94,
+        "provisional": false
+      },
+      "drivers": [
+        {
+          "label": "Cash returns",
+          "tone": "positive",
+          "text": "The prospectus provides a multi-year dividend intention and implied yield."
+        },
+        {
+          "label": "Disclosure",
+          "tone": "positive",
+          "text": "Final price, size, timetable and ownership are disclosed."
+        },
+        {
+          "label": "Deal structure",
+          "tone": "risk",
+          "text": "All shares are sold by the parent, so IPO proceeds do not fund the company directly."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Final offer price announcement",
+          "publisher": "Dubai Financial Market",
+          "url": "https://feeds.dfm.ae/documents/2026/Nov/4/efaf66ce-02af-4474-8e60-d3a2e9f733f3/DIC%20PR%2004%2011%202026%20E.Pdf.pdf",
+          "type": "exchange notice"
+        },
+        {
+          "title": "IPO prospectus",
+          "publisher": "Dubai Financial Market",
+          "url": "https://feeds.dfm.ae/documents//2026/Oct/19/bab3d2eb-48e3-488f-a16e-fb429d20a7a2/DIP%20Holding%20%20%20UAE%20Prospectus%20English%20Compressed.Pd.pdf",
+          "type": "prospectus"
+        }
+      ],
+      "lastVerified": "2026-11-20T10:26:23Z"
+    },
+    {
+      "id": "leo-pharma-dk-2026",
+      "company": "LEO Pharma",
+      "ticker": null,
+      "region": "Europe",
+      "country": "Denmark",
+      "exchange": "Copenhagen (considered)",
+      "sector": "Pharmaceuticals",
+      "status": "Postponed",
+      "expectedDate": null,
+      "dateConfidence": "unknown",
+      "price": null,
+      "shares": null,
+      "dealSize": null,
+      "filedAt": "2026-11-16",
+      "summary": "Owners said market conditions were unsuitable and gave no listing timetable.",
+      "scores": {
+        "quality": null,
+        "risk": null,
+        "research": null,
+        "completeness": 28,
+        "provisional": true
+      },
+      "drivers": [
+        {
+          "label": "Status",
+          "tone": "risk",
+          "text": "No active timetable or public offer terms are available."
+        }
+      ],
+      "sources": [
+        {
+          "title": "IPO timing statement — 16 Nov 2026",
+          "publisher": "Reuters via Euronext",
+          "url": "https://live.euronext.com/en/financial-news/leo-pharma-owners-see-market-conditions-unsuitable-ipo-ceo-says",
+          "type": "reporting"
+        }
+      ],
+      "lastVerified": "2026-11-20T10:26:23Z"
+    }
+  ],
+  "refresh": {
+    "secRecordsChecked": 4,
+    "recordsChanged": 1,
+    "errors": []
+  }
+}

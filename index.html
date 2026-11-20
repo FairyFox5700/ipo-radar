@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="A transparent, source-linked IPO research tracker for the US, Europe and Middle East.">
+  <title>IPO Radar — Global IPO Research Tracker</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="topbar">
+    <a class="brand" href="#overview" aria-label="IPO Radar home"><span class="brand-mark">IR</span><span>IPO Radar</span></a>
+    <nav aria-label="Primary navigation">
+      <button class="nav-link active" data-page="overview">Overview</button>
+      <button class="nav-link" data-page="calendar">Calendar</button>
+      <button class="nav-link" data-page="watchlist">Watchlist <span id="watchCount" class="count">0</span></button>
+      <button class="nav-link" data-page="methodology">Methodology</button>
+    </nav>
+    <div id="freshness" class="freshness" aria-live="polite">Loading data…</div>
+  </header>
+
+  <main id="main">
+    <section id="overviewPage" class="page active">
+      <div class="hero shell">
+        <div>
+          <p class="eyebrow">GLOBAL IPO INTELLIGENCE</p>
+          <h1>Find the listings worth researching.</h1>
+          <p class="hero-copy">A source-linked view of IPO filings and listing events across the US, Europe and Middle East. Scores explain research priority—not expected returns.</p>
+        </div>
+        <div class="hero-orbit" aria-hidden="true"><div class="orbit-ring"></div><span>IPO</span></div>
+      </div>
+
+      <section class="shell metric-grid" aria-label="Market summary">
+        <article class="metric"><span>Active pipeline</span><strong id="metricActive">—</strong><small>filed, amended or announced</small></article>
+        <article class="metric"><span>Verified dates</span><strong id="metricDates">—</strong><small>exact event dates</small></article>
+        <article class="metric"><span>Research shortlist</span><strong id="metricShortlist">—</strong><small>≥60% data completeness</small></article>
+        <article class="metric"><span>On your watchlist</span><strong id="metricWatched">0</strong><small>stored on this device</small></article>
+      </section>
+
+      <section class="shell workspace">
+        <div class="section-heading">
+          <div><p class="eyebrow">RESEARCH SHORTLIST</p><h2>IPO pipeline</h2></div>
+          <p>Mechanically ranked using the published scoring rules. Inclusion is not an investment recommendation.</p>
+        </div>
+        <div class="toolbar">
+          <label class="search"><span aria-hidden="true">⌕</span><input id="searchInput" type="search" placeholder="Search company, ticker, exchange…" aria-label="Search IPOs"></label>
+          <div class="segments" aria-label="Filter by region">
+            <button class="segment active" data-region="All">All</button>
+            <button class="segment" data-region="US">US</button>
+            <button class="segment" data-region="Europe">Europe</button>
+            <button class="segment" data-region="Middle East">Middle East</button>
+          </div>
+          <label class="select-wrap"><span>Status</span><select id="statusFilter"><option value="active">Active pipeline</option><option value="all">All statuses</option><option value="Filed">Filed</option><option value="Amended">Amended</option><option value="Listed">Listed</option><option value="Postponed">Postponed</option></select></label>
+        </div>
+        <div id="recordList" class="record-list" aria-live="polite"></div>
+        <div id="emptyState" class="empty hidden"><strong>No matching IPOs</strong><p>Try a different region, status or search.</p></div>
+      </section>
+
+      <section class="shell coverage-card">
+        <div><p class="eyebrow">COVERAGE & FRESHNESS</p><h2>Trust the trail, not the headline.</h2><p>Every company links to its source. Unknown dates and terms stay unknown rather than being estimated.</p></div>
+        <div id="coverageBars" class="coverage-bars"></div>
+      </section>
+    </section>
+
+    <section id="calendarPage" class="page shell subpage">
+      <div class="section-heading"><div><p class="eyebrow">EVENT AGENDA</p><h1>IPO calendar</h1></div><p>Exact dates only. Undated filings remain in the pipeline but are not placed on the calendar.</p></div>
+      <div id="calendarList" class="calendar-list"></div>
+    </section>
+
+    <section id="watchlistPage" class="page shell subpage">
+      <div class="section-heading"><div><p class="eyebrow">YOUR RESEARCH</p><h1>Watchlist</h1></div><p>Saved on this device only. No account, cloud sync or server storage.</p></div>
+      <div class="watch-actions"><button id="exportWatch" class="button secondary">Export JSON</button><label class="button secondary">Import JSON<input id="importWatch" type="file" accept="application/json" hidden></label><button id="clearWatch" class="button danger">Clear watchlist</button></div>
+      <div id="watchList" class="record-list"></div>
+      <div id="watchEmpty" class="empty"><strong>Your watchlist is empty</strong><p>Use the star beside any IPO to save it here.</p></div>
+    </section>
+
+    <section id="methodologyPage" class="page shell subpage prose">
+      <p class="eyebrow">TRANSPARENT BY DESIGN</p><h1>How scores work</h1>
+      <p class="lead">The score is a research triage tool. It is not a forecast, price target, or recommendation.</p>
+      <div class="method-grid">
+        <article><span class="score-label quality">QUALITY · 0–100</span><h2>Higher is stronger</h2><ul><li>Financial resilience · 35%</li><li>Business durability · 25%</li><li>Governance & disclosure · 20%</li><li>Deal structure · 20%</li></ul></article>
+        <article><span class="score-label risk">RISK · 0–100</span><h2>Higher means more risk</h2><ul><li>Valuation risk · 30%</li><li>Execution/profitability · 25%</li><li>Market/sector · 15%</li><li>Liquidity/deal · 15%</li><li>Country/regulatory · 15%</li></ul></article>
+      </div>
+      <div class="formula"><code>Research score = 0.55 × Quality + 0.45 × (100 − Risk)</code></div>
+      <h2>Missing information</h2><p>Scores require at least 60% data completeness. Below that threshold, the tracker shows “Insufficient data” instead of silently assigning neutral values. Scores marked provisional have less than 80% completeness.</p>
+      <h2>Data policy</h2><p>Primary sources take priority: regulator filings, prospectuses, exchange notices and issuer announcements. Dates are labelled confirmed, expected or unknown. Source conflicts are shown rather than resolved silently.</p>
+    </section>
+  </main>
+
+  <dialog id="detailDialog" class="detail-dialog"><button id="closeDialog" class="dialog-close" aria-label="Close details">×</button><div id="dialogContent"></div></dialog>
+
+  <footer><div class="shell"><strong>IPO Radar</strong><p>For informational and research purposes only. This site does not provide investment, legal or tax advice and does not constitute an offer, solicitation or recommendation to buy or sell securities. IPO terms can change or be withdrawn without notice. Verify official sources before relying on this page.</p><span id="buildStamp"></span></div></footer>
+  <script src="app.js" defer></script>
+</body>
+</html>
