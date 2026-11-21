@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-20T10:27:58Z",
+  "generatedAt": "2026-11-21T14:41:45Z",
   "sourcePolicy": "Primary filings and official exchange or issuer notices are preferred. Unknown terms remain null.",
   "records": [
     {
@@ -21,7 +21,7 @@
       },
       "shares": 3100000,
       "dealSize": "$15.5m–$21.7m",
-      "filedAt": "2026-11-18",
+      "filedAt": "2026-11-20",
       "summary": "Laser isotope separation technology developer; listing approval and timing remain pending.",
       "scores": {
         "quality": 43,
@@ -49,13 +49,19 @@
       ],
       "sources": [
         {
+          "title": "SEC S-1/A — 2026-11-20",
+          "publisher": "U.S. SEC",
+          "url": "https://www.sec.gov/Archives/edgar/data/1973276/000149315226053406/forms-1a.htm",
+          "type": "filing"
+        },
+        {
           "title": "SEC S-1/A — 18 Nov 2026",
           "publisher": "U.S. SEC",
           "url": "https://www.sec.gov/Archives/edgar/data/1973276/000149315226052907/forms-1a.htm",
           "type": "filing"
         }
       ],
-      "lastVerified": "2026-11-20T10:26:23Z"
+      "lastVerified": "2026-11-21T14:41:45Z"
     },
     {
       "id": "nscale-uk-2026",
